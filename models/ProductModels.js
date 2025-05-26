@@ -1,4 +1,4 @@
-const db = require('../db');
+const db = require('../config/db');
 
 const addProduct = async (productData) => {
     try {
@@ -91,4 +91,6 @@ const getProductsByCategory = async (category) => {
     }
 }
 
-module.exports = { addProduct, getProduct, getProductById, updateProduct, deleteProduct, getProductsByCategory };   
+module.exports = { addProduct, getProduct, 
+    getProductById, updateProduct, 
+    deleteProduct, getProductsByCategory };   

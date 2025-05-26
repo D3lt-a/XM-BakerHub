@@ -1,9 +1,9 @@
 const { addProduct, getProduct, 
     getProductById, updateProduct, 
     deleteProduct, getProductsByCategory 
-} = require('../services/productService');
+} = require('../models/ProductModels');
 
-exports.createProduct = async (req, res) => {
+const createProduct = async (req, res) => {
     const productData = req.body;
 
     try {
@@ -31,7 +31,7 @@ const deleteProductById = async (req, res) => {
     }
 }
 
-const getProduct = async (req, res) => {
+const getAllProduct = async (req, res) => {
     try {
         const products = await getProduct();
         res.status(200).json(products);
@@ -41,7 +41,7 @@ const getProduct = async (req, res) => {
     }
 }
 
-const getProductById = async (req, res) => {
+const fetchProductById = async (req, res) => {
     const productId = req.params.id;
 
     try {
@@ -74,7 +74,7 @@ const updateProductById = async (req, res) => {
     }
 }
 
-const getProductsByCategory = async (req, res) => {
+const fecthProductsByCategory = async (req, res) => {
     const category = req.params.category;
 
     try {
@@ -89,8 +89,8 @@ const getProductsByCategory = async (req, res) => {
 module.exports = {
     createProduct,
     deleteProductById,
-    getProduct,
-    getProductById,
+    getAllProduct,
+    fetchProductById,
     updateProductById,
-    getProductsByCategory
+    fecthProductsByCategory
 };
