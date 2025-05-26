@@ -27,6 +27,7 @@
 
 ## 📁 Project Structure
 
+```
 
 XM-BakeryHub/
 ├── config/                # DB and Firebase config files
@@ -40,6 +41,7 @@ XM-BakeryHub/
 ├── app.js                 # Express entry point
 └── firebase.json          # Firebase config
 
+```
 ---
 
 ## 🧩 Technologies Used
