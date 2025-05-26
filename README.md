@@ -1,8 +1,4 @@
-Here’s a detailed and professional `README.md` file you can use for your **XM-BakeryHub** project on GitHub:
 
----
-
-```markdown
 # XM-BakeryHub 🍞
 
 > A modern web application built using Node.js and MySQL for managing inventory, sales, and customer orders for XM Bakeries, located in Kigali City, Rwanda.
@@ -31,7 +27,6 @@ Here’s a detailed and professional `README.md` file you can use for your **XM-
 
 ## 📁 Project Structure
 
-```
 
 XM-BakeryHub/
 ├── config/                # DB and Firebase config files
@@ -44,8 +39,6 @@ XM-BakeryHub/
 ├── .env                   # Environment variables
 ├── app.js                 # Express entry point
 └── firebase.json          # Firebase config
-
-````
 
 ---
 
