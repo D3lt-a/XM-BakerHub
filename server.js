@@ -11,10 +11,13 @@ app.use(express.json());
 const authRoutes = require('./routes/authRoutes');
 const productRoutes = require('./routes/productRoutes');
 const orderRoutes = require('./routes/orderRoutes');
+const salesRoutes = require('./routes/salesRoutes');
 
-app.use('/api/auth', authRoutes);
-app.use('/api/products', productRoutes);
-app.use('/api/orders', orderRoutes);
+
+app.use('/auth', authRoutes);
+app.use('/products', productRoutes);
+app.use('/orders', orderRoutes);
+app.use('/sales', salesRoutes);
 
 app.get('/', (req, res) => {
     res.send('Welcome to XM-BakerHub API');
