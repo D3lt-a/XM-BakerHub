@@ -14,6 +14,8 @@ module.exports = {
     "no-restricted-globals": ["error", "name", "length"],
     "prefer-arrow-callback": "error",
     "quotes": ["error", "double", {"allowTemplateLiterals": true}],
+    "linebreak-style": 0, // disable linebreak linting (optional)
+    "camelcase": 0, // enforce camelCase naming convention
   },
   overrides: [
     {

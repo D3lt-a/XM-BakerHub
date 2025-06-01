@@ -3,8 +3,8 @@ const {
   getOrdersByUser,
   getOrderById,
   updateOrderStatus,
-} = require("../../models/orderModel");
-const {getUserById} = require("../../models/UserModel");
+} = require("../models/orderModel");
+const {getUserById} = require("../models/UserModel");
 
 const placeOrder = async (req, res) => {
   const {userId, items} = req.body;

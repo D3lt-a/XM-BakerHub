@@ -1,16 +1,16 @@
 require('dotenv').config();
 
 const express = require('express');
-const db = require('./functions/config/db');
+const db = require('./config/db');
 
 const app = express();
 const PORT = process.env.PORT;
 
 app.use(express.json());
 
-const authRoutes = require('./functions/routes/authRoutes');
-const productRoutes = require('./functions/routes/productRoutes');
-const orderRoutes = require('./functions/routes/orderRoutes');
+const authRoutes = require('./routes/authRoutes');
+const productRoutes = require('./routes/productRoutes');
+const orderRoutes = require('./routes/orderRoutes');
 
 app.use('/api/auth', authRoutes);
 app.use('/api/products', productRoutes);
