@@ -161,12 +161,3 @@ firebase deploy --only functions
 * **Error Handling:** Graceful error responses using centralized middleware.
 
 ---
-
-## 🤝 Contributing
-
-Feel free to fork this repo and submit pull requests if you want to contribute or improve the system
-
-```
-
-
-```

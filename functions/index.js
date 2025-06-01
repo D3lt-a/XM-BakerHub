@@ -20,6 +20,4 @@ app.get('/', (req, res) => {
     res.send('Welcome to XM-BakerHub API');
 });
 
-app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
-});
+exports.api = functions.https.onRequest(app);
